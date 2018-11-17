@@ -5,3 +5,16 @@
 <% end %>
 
 sign up
+
+<form action="<%= users_url %>" method="post">
+  <label for="username"> username:
+  <input id="username" type="text" name="users[username]" value="">
+  </label>
+  
+  <label for="password"> password:
+  <input id="password" type="text" name="users[password]" value="">
+  </label>
+  
+  <input type="submit" name="submit_button" value="sign up">
+  
+</form>
