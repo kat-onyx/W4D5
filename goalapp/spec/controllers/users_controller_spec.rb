@@ -105,6 +105,13 @@ RSpec.describe UsersController, type: :controller do
       expect(response).to redirect_to new_user_url
     end 
   end 
+  
+  describe "GET #new" do 
+    it "renders the new user page" do 
+      get :new
+      expect(response).to render_template(:new)
+    end 
+  end 
 end
 
 
